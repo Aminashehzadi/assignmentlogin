@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <h:body>
+
+        
+        <h:form>
+            <div class="card container mt-5 p-5 shadow">
+                <h1 class="display-4 text-center font-weight-bold mb-5">SignIn Your Account</h1>
+                <div class="col-md-6">
+                        <p:outputLabel value="Username"/>
+                        <div class="ui-inputgroup">
+                            <span class="ui-inputgroup-addon"><i class="pi pi-user"></i></span>
+                            <p:inputText id="username" value="#{lign1.username}" placeholder="username" required="true"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p:outputLabel for="password" value="Password"/>
+                        <div class="ui-inputgroup">
+                            <span class="ui-inputgroup-addon"><i class="pi pi-lock"></i></span>
+                            <p:inputText id="password" value="#{lign1.password}" placeholder="password" required="true"/>
+                        </div>
+                    </div>
+                    <p:commandButton id="submit" value="submit" action="#{lign1.login()}"/>
+                </div>
+
+
+
+        </h:form>
+        
+    </h:body>
+</html>
